@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -19,7 +22,7 @@
     <div class="container">
       <div class="header__inner">
         <a href="#" class="header__logo">
-          <img src="images/header-logo.svg" alt="logo">
+          <img src="images/logo.svg" alt="logo">
         </a>
         <div class="header__content">
           <nav class="header__menu">
@@ -52,7 +55,7 @@
             </select>
           </div>
           <div class="header__items">
-            <a href="#" class="header__item notification">
+            <a href="#" class="header__item notification" data-modal="modal-one">
               <img src="images/header__item-1.svg" alt="img">
             </a>
             <a href="#" class="header__item">
@@ -66,6 +69,123 @@
       </div>
     </div>
   </header>
+
+  <div class="modal" id="modal-one">
+    <div class="modal-bg modal-exit"></div>
+    <div class="modal-container">
+      <div class="notification__title">Notifications</div>
+      <div class="notification__items">
+        <div class="notification__item">
+          <div class="notification__item-top">
+            <div class="notification__item-title">Incoming transfer</div>
+            <div class="notification__item-date"> 1 minute ago</div>
+          </div>
+          <div class="notification__item-content">
+            <div class="notification__item-text">
+              <div class="notification__text">From # 4230 1810 3040 4537 </div>
+              <div class="notification__text">To Current Account <span># •••• 3657</span></div>
+            </div>
+            <div class="notification__item-money">
+              2,000,000
+            </div>
+          </div>
+          <div class="notification__item-bottom">
+            <div class="notification__item-set">
+              <div class="notification__item-date">
+                1234:20130–22130
+              </div>  
+            </div>
+            <div class="notification__item-btns">
+              <button class="notification__item-btn danger__btn">Decline</button>
+              <button class="notification__item-btn primary__btn">Accept</button>
+            </div>
+          </div>
+        </div>
+        <div class="notification__item">
+          <div class="notification__item-top">
+            <div class="notification__item-title">Incoming project</div>
+            <div class="notification__item-date"> 1 minute ago</div>
+          </div>
+          <div class="notification__item-content">
+            <div class="notification__item-text">
+              <div class="notification__text">From # 4230 1810 3040 4537 </div>
+              <div class="notification__text">To Current Account <span># •••• 3657</span></div>
+            </div>
+          </div>
+          <div class="notification__item-bottom">
+            <div class="notification__item-set">
+              <div class="notification__item-title">Copiulemu landfill gas project …</div>
+              <div class="notification__item-date">
+                #1234
+              </div>  
+            </div>
+            <div class="notification__item-btns">
+              <button class="notification__item-btn danger__btn">Decline</button>
+              <button class="notification__item-btn primary__btn">Accept</button>
+            </div>
+          </div>
+        </div>
+        <div class="notification__item">
+          <div class="notification__item-top">
+            <div class="notification__item-title">Incoming transfer</div>
+            <div class="notification__item-date"> 1 minute ago</div>
+          </div>
+          <div class="notification__item-content">
+            <div class="notification__item-text">
+              <div class="notification__text">From # 4230 1810 3040 4537 </div>
+              <div class="notification__text">To Current Account <span># •••• 3657</span></div>
+            </div>
+
+          </div>
+          <div class="notification__item-bottom">
+            <div class="notification__item-set">
+              <div class="notification__item-money">
+                2,000,000,000,000
+              </div>
+              <div class="notification__item-date">
+                1234:20130–22130, 222–333
+              </div>  
+            </div>
+            <div class="notification__item-btns">
+              <button class="notification__item-btn danger__btn">Decline</button>
+              <button class="notification__item-btn primary__btn">Accept</button>
+            </div>
+          </div>
+        </div>
+        <div class="notification__item">
+          <div class="notification__item-top">
+            <div class="notification__item-title">Invite from Oiltanking GmbH </div>
+            <div class="notification__item-date"> 1 minute ago</div>
+          </div>
+          <div class="notification__item-bottom">
+            <div class="notification__item-set"> 
+            </div>
+            <div class="notification__item-btns">
+              <button class="notification__item-btn danger__btn">Decline</button>
+              <button class="notification__item-btn primary__btn">Join</button>
+            </div>
+          </div>
+        </div>
+        <div class="notification__item">
+          <div class="notification__item-top">
+            <div class="notification__item-title">UERs issued </div>
+            <div class="notification__item-date"> 1 minute ago</div>
+          </div>
+          <div class="notification__item-textContent">
+            Be advised that 10 000 UERs your organisation has verified for"Gas flaring project" in 2019 have been issued and transferred accordingto your instructions.
+          </div>
+          <div class="notification__item-bottom">
+            <div class="notification__item-set"> 
+            </div>
+            <div class="notification__item-btns">
+              <button class="notification__item-btn primary__btn">Acknowledge</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="modal-close modal-exit"><img src="images/exit-btn.svg" alt="x"></button>
+    </div>
+  </div>
 
 
 
