@@ -1,0 +1,39 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Log In</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://unpkg.com/htmx.org"></script>
+    </head>
+
+    <body>
+
+        <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
+
+        <main>
+            <form action="/account-type.html" method="get">
+                <fieldset>
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Please enter your e-mail">
+                </fieldset>
+                <fieldset>
+                    <label>Password</label>
+                    <input type="password" placeholder="">
+                </fieldset>
+                <label>
+                    <input type="checkbox">
+                    Keep me logged in
+                </label>
+                <a href>Forgot your password?</a>
+                <button class="primary__btn">Log In</button>
+                <p>
+                    Don’t have an account? 
+                    <a href="/signup.html">Sign up</a>
+                </p>
+            </form>
+        </main>
+
+    </body>
+
+</html>

@@ -1,0 +1,23 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Log In</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://unpkg.com/htmx.org"></script>
+    </head>
+
+    <body>
+
+        <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
+
+
+        <h1>Personal information</h1>
+
+        <form action="/organisation-information.html" method="get">
+            <button class="primary__btn">Send in for verification</button>
+        </form>
+
+    </body>
+
+</html>

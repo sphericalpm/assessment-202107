@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://unpkg.com/htmx.org"></script>
+    </head>
+
+    <body>
+
+        <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
+
+        <main>
+            <form action="/account-type.html" method="get">
+                <fieldset>
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Please enter your e-mail">
+                </fieldset>
+                <fieldset>
+                    <label>Password</label>
+                    <input type="password" placeholder="">
+                    <span>Your password must be at least 8 characters long, be of mixed case and also contain a digit or symbol.</span>
+                </fieldset>
+                <button class="primary__btn">Sign Up</button>
+                <p>
+                    Already have an account? 
+                    <a href="/login.html">Log in</a>
+                </p>
+            </form>
+        </main>
+
+    </body>
+
+</html>

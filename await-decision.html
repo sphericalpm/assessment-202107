@@ -12,29 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
   <title>Document</title>
-  <link rel="stylesheet" href="../global-styles.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/htmx.org"></script>
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a href="#" class="header__logo">
-          <img src="images/logo.svg" alt="logo">
-        </a>
-        <div class="header__items">
-          <a href="#" class="header__item">
-            <img src="images/header-item-1.svg" alt="img">
-          </a>
-          <a href="#" class="header__item">
-            <img src="images/header-item-2.svg" alt="img">
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
+  <div hx-get="_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
 
   <section class="page">
     <div class="container">
@@ -121,8 +105,6 @@
     </div>
   </section>
   
-
-  <script src="js/main.js"></script>
 </body>
 
 </html>
