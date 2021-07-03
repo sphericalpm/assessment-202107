@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <button data-modal="modal-one" class="primary__btn">Open Modal</button>
+  </div>
+
+  <div class="modal modal-sm" id="modal-one">
+    <div class="modal-bg modal-exit"></div>
+    <div class="modal-container">
+      <h2 class="modal__title">Invoicing for payment</h2>
+      <div class="modal__descr">The action you have requested is subject to a fee of <b>EUR 2,500.00</b> Please confirm issuance of a respective invoice to <b> Oiltanking GmbH.</b></div>
+      <div class="modal__btns">
+        <button class="primary__btn">Accept the agreement</button>
+        <button class="btn modal-exit">Cancel</button>
+      </div>
+      <button class="modal-close modal-exit"><img src="images/exit-btn.svg" alt="x"></button>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
