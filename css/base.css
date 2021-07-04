@@ -112,3 +112,42 @@
   color: #6B7683;
   margin-left: 3px;
 }
+
+@media (max-width: 560px) {
+  .prevention {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  h1{
+    font-size: 26px;
+  }
+  .form__line-wrapper{
+    flex-direction: column;
+  }
+  .form__line-wrapper .form__line-file{
+    margin-right: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+  .form__select{
+    max-width: 100% !important;
+  }
+  .form__line-checkbox{
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 410px) {
+  .page__line{
+    display: block;
+  }
+  .page__item-title{
+    font-size: 14px;
+  }
+  .page__item-suptitle{
+    font-size: 12px;
+  }
+  .warning{
+    font-size: 14px;
+  }
+}

@@ -1,5 +1,6 @@
 .header {
   background-color: #fff;
+  min-width: 320px;
 }
 .header__inner {
   display: -webkit-box;
@@ -39,4 +40,12 @@
 }
 .header__item:hover {
   opacity: 0.6;
+}
+.header__logo img{
+  max-width: 250px;
+}
+@media (max-width: 500px) {
+  .header__logo img{
+    max-width: 150px;
+  }
 }

@@ -12,13 +12,13 @@
   width: 100%;
   overflow: hidden;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.account-type__item + .account-type__item{
+.account-type__item + .account-type__item {
   margin-left: 26px;
 }
 
-.account-type__item:hover{
+.account-type__item:hover {
   transform: scale(1.1);
 }
 .account-type__img {
@@ -27,7 +27,7 @@
 }
 .account-type__content {
   padding: 55px 21px 21px;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-weight: bold;
   font-size: 32px;
   line-height: 41px;
@@ -44,7 +44,17 @@
     font-size: 20px;
     line-height: 30px;
   }
-  .account-type__img {
-    min-height: 200px;
+}
+@media (max-width: 750px) {
+  .account-type__items {
+    flex-wrap: wrap;
+  }
+  .account-type__item {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .account-type__item + .account-type__item {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
