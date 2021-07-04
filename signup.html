@@ -1,35 +1,57 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <title>Sign Up</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="https://unpkg.com/htmx.org"></script>
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
 
-        <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
+<body>
 
-        <main>
+    <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
+
+
+    <main class="form">
+        <div class="form__inner">
+            <div href="#" class="form__logo">
+                <a href="#"><img src="images/logo.svg" alt="logo"></a>
+            </div>
             <form action="/account-type.html" method="get">
-                <fieldset>
-                    <label>E-mail</label>
-                    <input type="email" placeholder="Please enter your e-mail">
-                </fieldset>
-                <fieldset>
-                    <label>Password</label>
-                    <input type="password" placeholder="">
-                    <span>Your password must be at least 8 characters long, be of mixed case and also contain a digit or symbol.</span>
-                </fieldset>
-                <button class="primary__btn">Sign Up</button>
-                <p>
-                    Already have an account? 
-                    <a href="/login.html">Log in</a>
+                <div class="form__line">
+                    <label class="form__line-label">E-mail</label>
+                    <input class="form__line-input" type="text" placeholder="Please enter your e-mail">
+                </div>
+                <div class="form__line form__line--pass">
+                    <label class="form__line-label">Password</label>
+                    <input class="form__line-input" type="password">
+                </div>
+                <p class="form__line-text">
+                    Your password must be at least 8 characters long,be of mixed case and also contain a digit or
+                    symbol.
                 </p>
+                <button class="form__btn">Sign up</button>
             </form>
-        </main>
+            <div class="form__text">Already have an account? <a href="/login.html" class="form__link">Log in</a></div>
+        </div>
+        <div class="form__bottom">
+            <ul class="form__bottom-list">
+                <li class="form__bottom-item"><a href="#">Cookie Policy </a></li>
+                <li class="form__bottom-item"><a href="#">Privacy Policy</a></li>
+                <li class="form__bottom-item"><a href="#">Bribery Act Policy</a></li>
+                <li class="form__bottom-item"><a href="#">Modern Slavery Statement</a></li>
+            </ul>
+            <div class="form__bottom-logo">
+                <span>Provided by</span>
+                <a href="#">
+                    <img src="images/form-logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+    </main>
 
-    </body>
+
+</body>
 
 </html>

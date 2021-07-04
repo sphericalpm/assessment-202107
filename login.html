@@ -11,28 +11,48 @@
 
         <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
 
-        <main>
-            <form action="/account-type.html" method="get">
-                <fieldset>
-                    <label>E-mail</label>
-                    <input type="email" placeholder="Please enter your e-mail">
-                </fieldset>
-                <fieldset>
-                    <label>Password</label>
-                    <input type="password" placeholder="">
-                </fieldset>
-                <label>
-                    <input type="checkbox">
-                    Keep me logged in
-                </label>
-                <a href>Forgot your password?</a>
-                <button class="primary__btn">Log In</button>
-                <p>
-                    Don’t have an account? 
-                    <a href="/signup.html">Sign up</a>
-                </p>
-            </form>
-        </main>
+        <main class="form">
+            <div class="form__inner">
+              <div href="#" class="form__logo">
+                <a href="#"><img src="images/logo.svg" alt="logo"></a>
+              </div>
+              <form action="/account-type.html" method="get">
+                <div class="form__line">
+                  <label class="form__line-label">E-mail</label>
+                  <input class="form__line-input" type="text" placeholder="Please enter your e-mail">
+                </div>
+                <div class="form__line form__line--pass">
+                  <label class="form__line-label">Password</label>
+                  <input class="form__line-input" type="password">
+                </div>
+                <div class="form__line-items">
+                  <div class="form__line-checkbox">
+                    <input type="checkbox" id="checkbox-1">
+                    <label for="checkbox-1">Keep me logged in</label>
+                  </div>
+                  <a href="#" class="form__link">Forgot your password?</a>
+                </div>
+                <button class="form__btn">Log in</button>
+              </form>
+              <div class="form__text">Don’t have an account? <a href="/signup.html" class="form__link">Log in</a></div>
+            </div>
+            <div class="form__bottom">
+              <ul class="form__bottom-list">
+                <li class="form__bottom-item"><a href="#">Cookie Policy </a></li>
+                <li class="form__bottom-item"><a href="#">Privacy Policy</a></li>
+                <li class="form__bottom-item"><a href="#">Bribery Act Policy</a></li>
+                <li class="form__bottom-item"><a href="#">Modern Slavery Statement</a></li>
+              </ul>
+              <div class="form__bottom-logo">
+                <span>Provided by</span>
+                <a href="#">
+                  <img src="images/form-logo.svg" alt="logo">
+                </a>
+              </div>
+            </div>
+          </main>
+
+
 
     </body>
 

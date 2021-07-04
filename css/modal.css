@@ -103,7 +103,7 @@
 .modal__text::-webkit-scrollbar-thumb:hover {
   background-color: rgba(107, 118, 131, 0.8);
 }
-.primary__btn {
+.btn-primary {
   color: #ffffff;
   font-weight: 500;
   background: #00b6c0;
@@ -116,7 +116,7 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.primary__btn:hover {
+.btn-primary:hover {
   background-color: rgba(0, 182, 192, 0.7);
 }
 .btn {
