@@ -8,12 +8,16 @@
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.25);
-  max-width: 310px;
+  flex-basis: calc(33.33333% - 20px);
   width: 100%;
   overflow: hidden;
   cursor: pointer;
   transition: all .3s;
 }
+.account-type__item + .account-type__item{
+  margin-left: 26px;
+}
+
 .account-type__item:hover{
   transform: scale(1.1);
 }
@@ -28,4 +32,19 @@
   font-size: 32px;
   line-height: 41px;
   color: #222222;
+}
+@media (max-width: 1000px) {
+  .account-type__content {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 900px) {
+  .account-type__content {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .account-type__img {
+    min-height: 200px;
+  }
 }

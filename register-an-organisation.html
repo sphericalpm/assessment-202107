@@ -1,21 +1,92 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <title>Log In</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="https://unpkg.com/htmx.org"></script>
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
 
-        <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
+<body>
+
+    <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
 
 
+    <div class="container">
         <h1>Register an organisation</h1>
 
-        <button onClick="window.location='/await-decision.html';">Send in for verification</button>
+        <form class="p-i-form">
+            <div class="form__line">
+                <label class="form__line-label">Registered name</label>
+                <input class="form__line-input" type="text">
+            </div>
+            <div class="form__line form__select">
+                <label class="form__line-label">Country of registration</label>
+                <select class="form__line-select">
+                    <option>Select Country</option>
+                    <option>Select Country</option>
+                </select>
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Head office address</label>
+                <textarea class="form__line-input form__line-textarea"></textarea>
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Phone</label>
+                <input class="form__line-input" type="text">
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Official email</label>
+                <input class="form__line-input" type="text">
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Registering authority</label>
+                <input class="form__line-input" type="text">
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Company Id number with the registering authority</label>
+                <input class="form__line-input" type="text">
+            </div>
+            <p class="form__line-textP">In order to register a company in the system, the following documents must
+                be attached for verification:
+            </p>
+            <div class="form__line-files">
+                <div class="form__line">
+                    <label class="form__line-label">Government registration document for company</label>
+                    <div class="form__line-file">
+                        <span class="form__line-fileText">Drop files to attach, or <a class="form__link"
+                                href="#">browse</a></span>
+                    </div>
+                </div>
+                <div class="form__line">
+                    <label class="form__line-label">Authorization from company to person</label>
+                    <div class="form__line-file">
+                        <span class="form__line-fileText">Drop files to attach, or <a class="form__link"
+                                href="#">browse</a></span>
+                    </div>
+                </div>
+                <div class="form__line">
+                    <label class="form__line-label">Trade license</label>
+                    <div class="form__line-file">
+                        <span class="form__line-fileText">Drop files to attach, or <a class="form__link"
+                                href="#">browse</a></span>
+                    </div>
+                </div>
+                <div class="form__line">
+                    <label class="form__line-label">Certificate of good standing</label>
+                    <div class="form__line-file">
+                        <span class="form__line-fileText">Drop files to attach, or <a class="form__link"
+                                href="#">browse</a></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <button class="btn-primary h56" onClick="window.location='/await-decision.html';">Send in for verification</button>
 
-    </body>
+    </div>
+
+
+</body>
 
 </html>

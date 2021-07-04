@@ -1,23 +1,92 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <title>Log In</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="https://unpkg.com/htmx.org"></script>
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
 
-        <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
+<body>
 
+    <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
 
+    <div class="container">
+        <div class="prevention">
+            Before you start working with the service, please provide your name and personal information.
+            This information is required for creating accounts and other operations with the service.
+        </div>
         <h1>Personal information</h1>
 
-        <form action="/organisation-information.html" method="get">
+        <form action="/organisation-information.html" method="get" class="p-i-form">
+            <div class="form__line">
+                <label class="form__line-label">Given name</label>
+                <input class="form__line-input" type="text">
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Surname</label>
+                <input class="form__line-input" type="text">
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Other names</label>
+                <input class="form__line-input" type="text">
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Postal address</label>
+                <textarea class="form__line-input form__line-textarea"></textarea>
+            </div>
+            <div class="form__line form__select">
+                <label class="form__line-label">Country of citizenship</label>
+                <select class="form__line-select">
+                    <option>Select Country</option>
+                    <option>Select Country</option>
+                </select>
+            </div>
+            <div class="form__line form__select">
+                <label class="form__line-label">Country of permanent residence</label>
+                <select class="form__line-select">
+                    <option>Select Country</option>
+                    <option>Select Country</option>
+                </select>
+            </div>
+            <div class="form__line">
+                <label class="form__line-label">Phone</label>
+                <input class="form__line-input" type="number">
+            </div>
+            <div class="form__line">
+                <label class="form__line-label form__line-prompt">
+                    <span>Identification document</span>
+                    <div class="prompt">
+                        <span>i</span>
+                    </div>
+                </label>
+                <div class="form__line-wrapper">
+                    <div class="form__line-file">
+                        <span class="form__line-fileText">Drop files to attach, or <a class="form__link" href="#">browse</a></span>
+                    </div>
+                    <div class="form__select">
+                        <select class="form__line-select">
+                            <option>Select Document Type</option>
+                            <option>Select Document Type</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__line-checkbox form__line-copy">
+                    <input type="checkbox" id="checkbox-2">
+                    <label for="checkbox-2">
+                        I consent to the storage processing of my personal information in accordance with 
+                        <a href="#" class="form__link">Ariadne Climate's privacy policy</a>
+                    </label>
+                  </div>
+            </div>
+
             <button class="btn-primary">Send in for verification</button>
         </form>
 
-    </body>
+    </div>
+
+
+</body>
 
 </html>

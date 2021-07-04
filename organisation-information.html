@@ -11,13 +11,15 @@
 
         <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
 
-        <h1>Organisation information</h1>
+        <div class="container">
+            <h1>Organisation information</h1>
 
-        <form action="/register-an-organisation.html" method="get">
-            <button>Register a new organisation</button>
-            <button>Join an organisation that is already registered</button>
-            <p>Please provide your login email address to the organisation for them to invite you to join</p>
-        </form>
+            <form action="/register-an-organisation.html" method="get" class="o-i-form">
+                <button class="org-info__btn">Register a new organisation</button>
+                <button class="org-info__btn">Join an organisation that is already registered</button>
+                <p class="org-info__text">Please provide your login email address to the organisation for them to invite you to join</p>
+            </form>
+        </div>
 
     </body>
 

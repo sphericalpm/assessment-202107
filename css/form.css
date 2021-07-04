@@ -35,9 +35,11 @@
   margin-top: 24px;
 }
 .form__line-label {
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   display: block;
+  color: #6b7683;
   margin-bottom: 8px;
 }
 .form__line-input {
@@ -51,51 +53,55 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
   outline: none;
+  font-weight: 500;
+  color: #222222;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 .form__line-input::-webkit-input-placeholder {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 16px;
   line-height: 19px;
+  color: #6b7683;
 }
 .form__line-input::-moz-placeholder {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 16px;
   line-height: 19px;
+  color: #6b7683;
 }
 .form__line-input:-ms-input-placeholder {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 16px;
   line-height: 19px;
+  color: #6b7683;
 }
 .form__line-input::-ms-input-placeholder {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 16px;
   line-height: 19px;
+  color: #6b7683;
 }
 .form__line-input::placeholder {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 16px;
   line-height: 19px;
+  color: #6b7683;
 }
 .form__line-input:focus {
   border-color: #00b6c0;
 }
-.form__line-input:focus::-webkit-input-placeholder {
-  color: #00666b;
-}
-.form__line-input:focus::-moz-placeholder {
-  color: #00666b;
-}
-.form__line-input:focus:-ms-input-placeholder {
-  color: #00666b;
-}
-.form__line-input:focus::-ms-input-placeholder {
-  color: #00666b;
-}
-.form__line-input:focus::placeholder {
-  color: #00666b;
-}
+
 .form__line-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,4 +252,147 @@
   line-height: 18px;
   color: #6b7683;
   font-weight: 400;
+}
+.form__line-textarea {
+  resize: none;
+  height: 82px;
+}
+.p-i-form {
+  max-width: 524px;
+  width: 100%;
+}
+.form__line-select {
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid #afafaf;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+  font-weight: 500;
+  appearance: none;
+  color: #6b7683;
+}
+.form__select::before {
+  position: absolute;
+  content: "";
+  bottom: 18px;
+  right: 14px;
+  width: 12px;
+  height: 8px;
+  background-image: url(../images/arrow-down.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form__select {
+  position: relative;
+}
+.form__line-prompt {
+  position: relative;
+  padding-right: 23px;
+  display: inline-block;
+}
+.prompt {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 16px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #00b6c0;
+  color: #fff;
+  text-align: center;
+  padding-top: 2px;
+}
+.form__line-file {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  padding: 8px 10px;
+  border: 1px dashed #afafaf;
+  color: #6b7683;
+  line-height: 19px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+  position: relative;
+}
+.form__line-fileText {
+  position: relative;
+  padding-left: 30px;
+}
+.form__line-fileText::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/cloud.svg);
+}
+.form__line-wrapper {
+  display: flex;
+}
+.form__line-wrapper .form__select {
+  max-width: 208px;
+  width: 100%;
+}
+.form__line-copy {
+  color: #222222;
+  font-weight: 500;
+  margin-top: 35px;
+}
+.o-i-form {
+  max-width: 411px;
+  width: 100%;
+  text-align: center;
+}
+.org-info__btn {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 6px;
+  min-height: 56px;
+  cursor: pointer;
+  border: none;
+  color: #00b6c0;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.org-info__btn:hover {
+  background-color: rgb(228, 228, 228);
+}
+.org-info__btn + .org-info__btn {
+  margin-top: 16px;
+}
+.org-info__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #6b7683;
+}
+.form__line-files{
+  margin-top: 88px;
+}
+.form__line-files .form__line-file{
+  max-width: 100%;
+  height: 44px;
+}
+.form__line-textP{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6B7683;
+}
+.h56{
+  height: 56px;
+  margin-top: 20px;
+  margin-bottom: 62px;
 }
