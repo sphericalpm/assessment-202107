@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Sign Up</title>
+    <title>UER Registory sign Up</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/htmx.org"></script>
 </head>
@@ -20,12 +20,12 @@
             </div>
             <form action="/account-type.html" method="get">
                 <div class="form__line">
-                    <label class="form__line-label">E-mail</label>
-                    <input class="form__line-input" type="text" placeholder="Please enter your e-mail">
+                    <label for="input_email" class="form__line-label">E-mail</label>
+                    <input class="form__line-input" name="input_email" type="email" placeholder="Please enter your e-mail" required>
                 </div>
                 <div class="form__line form__line--pass">
-                    <label class="form__line-label">Password</label>
-                    <input class="form__line-input" type="password">
+                    <label for="input_password" class="form__line-label">Password</label>
+                    <input class="form__line-input" name="input_password" type="password" required>
                 </div>
                 <p class="form__line-text">
                     Your password must be at least 8 characters long,be of mixed case and also contain a digit or

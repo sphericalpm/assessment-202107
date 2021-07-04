@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Log In</title>
+    <title>UER Registory log In</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/htmx.org"></script>
 </head>
@@ -13,13 +13,13 @@
     <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
 
 
-    <div class="container">
+    <main class="container">
         <h1>Register an organisation</h1>
 
         <form class="p-i-form">
             <div class="form__line">
-                <label class="form__line-label">Registered name</label>
-                <input class="form__line-input" type="text">
+                <label for="input_name" class="form__line-label">Registered name</label>
+                <input name="input_name" class="form__line-input" type="text" required>
             </div>
             <div class="form__line form__select">
                 <label class="form__line-label">Country of registration</label>
@@ -33,20 +33,20 @@
                 <textarea class="form__line-input form__line-textarea"></textarea>
             </div>
             <div class="form__line">
-                <label class="form__line-label">Phone</label>
-                <input class="form__line-input" type="text">
+                <label for="input_phone" class="form__line-label">Phone</label>
+                <input name="input_phone" class="form__line-input" type="tel" required>
             </div>
             <div class="form__line">
-                <label class="form__line-label">Official email</label>
-                <input class="form__line-input" type="text">
+                <label for="input_email" class="form__line-label">Official email</label>
+                <input name="input_email" class="form__line-input" type="email" required>
             </div>
             <div class="form__line">
-                <label class="form__line-label">Registering authority</label>
-                <input class="form__line-input" type="text">
+                <label for="input_registering_authority" class="form__line-label">Registering authority</label>
+                <input name="input_registering_authority" class="form__line-input" type="text" required>
             </div>
             <div class="form__line">
-                <label class="form__line-label">Company Id number with the registering authority</label>
-                <input class="form__line-input" type="text">
+                <label for="input_id" class="form__line-label">Company Id number with the registering authority</label>
+                <input name="input_id" class="form__line-input" type="text" required>
             </div>
             <p class="form__line-textP">In order to register a company in the system, the following documents must
                 be attached for verification:
@@ -84,7 +84,7 @@
         </form>
         <button class="btn-primary h56" onClick="window.location='/await-decision.html';">Send in for verification</button>
 
-    </div>
+    </main>
 
 
 </body>

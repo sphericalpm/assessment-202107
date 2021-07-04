@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Log In</title>
+    <title>UER Registory personal information</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/htmx.org"></script>
 </head>
@@ -12,7 +12,7 @@
 
     <div hx-get="/_header.html" hx-select=".header" hx-trigger="load" hx-swap="outerHTML"></div>
 
-    <div class="container">
+    <main class="container">
         <div class="prevention">
             Before you start working with the service, please provide your name and personal information.
             This information is required for creating accounts and other operations with the service.
@@ -21,16 +21,16 @@
 
         <form action="/organisation-information.html" method="get" class="p-i-form">
             <div class="form__line">
-                <label class="form__line-label">Given name</label>
-                <input class="form__line-input" type="text">
+                <label for="input_name" class="form__line-label">Given name</label>
+                <input name="input_name" class="form__line-input" type="text" required>
             </div>
             <div class="form__line">
-                <label class="form__line-label">Surname</label>
-                <input class="form__line-input" type="text">
+                <label for="input_surname" class="form__line-label">Surname</label>
+                <input name="input_surname" class="form__line-input" type="text" required>
             </div>
             <div class="form__line">
-                <label class="form__line-label">Other names</label>
-                <input class="form__line-input" type="text">
+                <label for="input_other_names" class="form__line-label">Other names</label>
+                <input name="input_other_names" class="form__line-input" type="text">
             </div>
             <div class="form__line">
                 <label class="form__line-label">Postal address</label>
@@ -51,8 +51,8 @@
                 </select>
             </div>
             <div class="form__line">
-                <label class="form__line-label">Phone</label>
-                <input class="form__line-input" type="number">
+                <label for="input_phone" class="form__line-label">Phone</label>
+                <input name="input_phone" class="form__line-input" type="tel" required>
             </div>
             <div class="form__line">
                 <label class="form__line-label form__line-prompt">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="form__line-checkbox form__line-copy">
-                    <input type="checkbox" id="checkbox-2">
+                    <input type="checkbox" id="checkbox-2" required>
                     <label for="checkbox-2">
                         I consent to the storage processing of my personal information in accordance with 
                         <a href="#" class="form__link">Ariadne Climate's privacy policy</a>
@@ -84,7 +84,7 @@
             <button class="btn-primary">Send in for verification</button>
         </form>
 
-    </div>
+    </main>
 
 
 </body>

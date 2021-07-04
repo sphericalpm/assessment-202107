@@ -18,16 +18,6 @@
   margin-bottom: 54px;
   text-align: center;
 }
-.form__line--pass::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/i-1.svg);
-  bottom: 12px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-}
 .form__line {
   position: relative;
 }
@@ -52,7 +42,7 @@
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  outline: none;
+  outline: #00b6c0;
   font-weight: 500;
   color: #222222;
 }
@@ -169,6 +159,19 @@ input[type="number"]::-webkit-inner-spin-button {
   display: inline-block;
   position: relative;
 }
+.form__line--pass{
+  display: flex;
+  position: relative;
+}
+.form__line--pass button{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+} 
 .form__bottom-item a {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -272,7 +275,7 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  outline: none;
+  outline: #00b6c0;
   font-weight: 500;
   appearance: none;
   color: #6b7683;
@@ -396,6 +399,12 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 20px;
   margin-bottom: 62px;
 }
+#password-btn path{
+  transition: all .3s;
+}
+#password-btn.show path{
+  fill: #00b6c0;
+}
 @media (max-width: 900px) {
   .form__bottom-logo img{
     max-width: 170px;
@@ -446,10 +455,6 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .form__line-label {
     font-size: 12px;
-  }
-  .form__line--pass::before {
-    bottom: 7px;
-    right: 12px;
   }
   .form__btn {
     min-height: 35px;
