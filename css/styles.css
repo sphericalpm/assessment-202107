@@ -1,24 +1,49 @@
-@import 'normalize.css';
-@import 'base.css';
-@import 'header.css';
-@import 'modal.css';
-@import 'form.css';
-@import 'account-type.css';
-@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap';
+@import "normalize.css";
+@import "base.css";
+@import "header.css";
+@import "modal.css";
+@import "form.css";
+@import "account-type.css";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap";
 
 body {
-    background: hsla(0, 0%, 95%, 1);
-    display: grid;
-    gap: 2em;
-    font-family: Roboto;
+  background: hsla(0, 0%, 95%, 1);
+  display: grid;
+  gap: 2em;
+  font-family: Roboto;
+}
+
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  display: inline-block;
+  color: inherit;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 main {
-    padding: 2em;
+  padding: 2em;
 }
 
-h1, h2, h3 {
-    font-family: Rajdhani;
+h1,
+h2,
+h3 {
+  font-family: Rajdhani;
 }
-
